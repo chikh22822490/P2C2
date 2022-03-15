@@ -7,7 +7,7 @@ class Farmer(models.Model):
     lastNameFarmer= models.TextField(null=False)
     phoneFarmer= models.BigIntegerField(null=False)
     emailFarmer= models.EmailField(null=False)
-    geoLocalFarmer= models.TextField(null=False)
+    adressFarmer= models.TextField(null=False)
     
     class Meta:
-        db_table= 'table_deliveryMan'
+        db_table= 'table_farmer'

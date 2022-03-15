@@ -3,5 +3,5 @@ from .models import *
 
 class farmerSerializer(ModelSerializer):
     class Meta:
-        model = DeliveryMan
+        model = Farmer
         fields = '__all__'

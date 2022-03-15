@@ -38,7 +38,7 @@ def update_product(request):
     serializer = productSerializer(instance=product, data=data)
     if(serializer.is_valid()):
         serializer.save()
-    return Response(serializer.date)
+    return Response(serializer.data)
 
 @api_view(["POST"])
 def delete_product(request):
