@@ -11,7 +11,6 @@ from .serializer import *
 
 
 @api_view(["GET"])
-@permission_classes([AllowAny])
 def get_admin_by_id(request):
     data = request.data
     print(data)
@@ -26,7 +25,6 @@ def get_admin_by_id(request):
 
 
 @api_view(["GET"])
-@permission_classes([AllowAny])
 def get_admin_by_email(request):
     data = request.data
     try:
@@ -40,7 +38,6 @@ def get_admin_by_email(request):
 
 
 @api_view(["POST"])
-@permission_classes([AllowAny])
 def create_admin(request):
     data = request.data
     if Account.objects.filter(email=data["email"]).exists():
