@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'user',
     "manager", 
     'client', 
-    'authentication'
+    'authentication',
+    "pointCollection",
+    "command_client"
 ]
 
 MIDDLEWARE = [
